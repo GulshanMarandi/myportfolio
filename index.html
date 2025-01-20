@@ -348,7 +348,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <div class="d-flex align-items-center">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFE2mcEKqEwbw/profile-displayphoto-shrink_800_800/B4DZRie73fHUAc-/0/1736819066771?e=1742428800&v=beta&t=QYYAOrES8tLbAaLaoODnqJ_JwjiqDUVIogDFnfxqF80"
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHcNuWYzcsYBw/profile-displayphoto-shrink_200_200/B4DZR.tAuaG4AY-/0/1737292518187?e=1743033600&v=beta&t=qievvgrmbNjQgFIXThW3DZLtljUMy9neHfenWdlfTYA"
                     alt="Profile" class="profile-pic me-2">
                 <span class="fw-bold">Gulshan Marandi</span>
             </div>
@@ -373,18 +373,18 @@
     <div class="drawer" id="drawer">
         <div class="drawer-header">
             <div class="d-flex align-items-center">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFE2mcEKqEwbw/profile-displayphoto-shrink_800_800/B4DZRie73fHUAc-/0/1736819066771?e=1742428800&v=beta&t=QYYAOrES8tLbAaLaoODnqJ_JwjiqDUVIogDFnfxqF80"
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHcNuWYzcsYBw/profile-displayphoto-shrink_200_200/B4DZR.tAuaG4AY-/0/1737292518187?e=1743033600&v=beta&t=qievvgrmbNjQgFIXThW3DZLtljUMy9neHfenWdlfTYA"
                     alt="Profile" class="profile-pic me-2">
                 <span class="fw-bold">Gulshan Marandi</span>
             </div>
             <button class="btn btn-close btn-close-white" id="closeDrawer" aria-label="Close"></button>
         </div>
         <div class="drawer-menu">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" onclick="removeDrawer()">About</a>
+            <a href="#skills" onclick="removeDrawer()">Skills</a>
+            <a href="#experience" onclick="removeDrawer()">Experience</a>
+            <a href="#projects" onclick="removeDrawer()">Projects</a>
+            <a href="#contact" onclick="removeDrawer()">Contact</a>
         </div>
         <div class="drawer-footer">
             <a href="Gulshan Marandi CV.pdf" class="btn btn-primary drawer-download-btn " download>Download CV</a>
@@ -402,7 +402,7 @@
                 <button>Contact Us</button>
             </div>
             <div class="image-container">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQFE2mcEKqEwbw/profile-displayphoto-shrink_800_800/B4DZRie73fHUAc-/0/1736819066771?e=1742428800&v=beta&t=QYYAOrES8tLbAaLaoODnqJ_JwjiqDUVIogDFnfxqF80"
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHcNuWYzcsYBw/profile-displayphoto-shrink_200_200/B4DZR.tAuaG4AY-/0/1737292518187?e=1743033600&v=beta&t=qievvgrmbNjQgFIXThW3DZLtljUMy9neHfenWdlfTYA"
                     alt="Anderson Cooper">
             </div>
         </div>
@@ -690,6 +690,10 @@
 
             // Open the default email client
             window.location.href = mailtoLink
+        }
+
+        function removeDrawer() {
+            drawer.classList.remove('open');
         }
     </script>
 </body>
